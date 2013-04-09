@@ -12,12 +12,12 @@
   , "coffee-script": ">= 1.1.1"
   , "seedjs": "latest"
   , "co-assets-compiler": "*"
+  , "co-generators": "*"
   },
   "devDependencies":
   { "nodeunit": "*"
   , "sinon": "*"
   , "semicov": "*"
-  , "co-generators": "*"
   , "grunt": ">= 0.4"
   , "grunt-coffeelint": "latest"
   , "grunt-compass": "latest"
