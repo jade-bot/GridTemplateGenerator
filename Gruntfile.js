@@ -69,7 +69,7 @@ module.exports = function(grunt) {
                 cmd: 'git stash; git branch deploy; git checkout deploy; cp .gitignore-deploy .gitignore; git rm -rf --cached .'
             },
             commit_build: {
-                cmd: 'git add .; git commit -am "New production build.";'
+                cmd: 'git add .; git commit -am "New production build." -f;'
             },
             heroku_deploy: {
                 cmd: 'git push heroku deploy:master -f; heroku open; git checkout master -f; git branch -D deploy; git stash pop;'
