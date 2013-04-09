@@ -66,13 +66,13 @@ module.exports = function(grunt) {
         },
         exec: {
             co_deploy: {
-                cmd: 'git stash; git branch deploy; git checkout deploy; cp .gitignore-deploy .gitignore; git rm -rf --cached .'
+                cmd: 'git stash; git branch deploy; git checkout deploy; cp .slugignore .gitignore; git rm -rf --cached .'
             },
             commit_build: {
                 cmd: 'git add .; git commit -am "New production build." --amend;'
             },
             heroku_deploy: {
-                cmd: 'git push heroku deploy:master -f; heroku open; git checkout master -f; git branch -D deploy; git stash pop;'
+                cmd: 'git push origin deploy; git push heroku deploy:master -f; heroku open; git checkout master -f; git branch -D deploy; git stash pop;'
             }
         },
         jasmine: {
