@@ -1,0 +1,33 @@
+{ "name": "GridTemplateGenerator-compound"
+, "description": "Grid image generator to be used on Photoshop as a template to make a grid-based design."
+, "version": "0.1.1"
+, "engines": ["node >= 0.8.0"]
+, "main": "server.coffee"
+, "dependencies":
+  { "jade": "*"
+  , "jade-ext": "latest"
+  , "express": "~3.x"
+  , "compound": ">= 1.1.0"
+  , "jugglingdb": ">= 0.1.0"
+  , "coffee-script": ">= 1.1.1"
+  , "seedjs": "latest"
+  , "co-assets-compiler": "*"
+  },
+  "devDependencies":
+  { "nodeunit": "*"
+  , "sinon": "*"
+  , "semicov": "*"
+  , "co-generators": "*"
+  , "grunt": ">= 0.4"
+  , "grunt-coffeelint": "latest"
+  , "grunt-compass": "latest"
+  , "grunt-contrib-coffee": ">= 0.4.0"
+  , "grunt-contrib-jasmine": ">= 0.3.0rc7"
+  , "grunt-contrib-watch": "latest"
+  , "grunt-exec": "~0.4.0"
+  , "grunt-contrib-requirejs": "~0.4.0"
+  }
+, "scripts":
+  { "test": "nodeunit test/*/*"
+  }
+}

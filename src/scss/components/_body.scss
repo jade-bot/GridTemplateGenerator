@@ -1,0 +1,19 @@
+.body {
+    @include span-columns(9 omega, 12);
+    @include border-radius(1em);
+    @include box-sizing(border-box);
+    background: $coffee;
+    padding: 1em;
+
+    .canvas-container {
+        background: white;
+        overflow: auto;
+        text-align: center;
+        width: 100%;
+
+        canvas {
+            @include transition;
+            opacity: 0;
+        }
+    }
+}

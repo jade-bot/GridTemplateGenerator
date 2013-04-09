@@ -1,0 +1,52 @@
+.options {
+    @include span-columns(3, 12);
+    @include border-radius(1em);
+    @include box-sizing(border-box);
+    background: $coffee;
+    color: $palid-coffee;
+    padding: 0.5em;
+
+    h2 {
+        color: white;
+    }
+
+    form {
+        font-size: 0.8em;
+        margin-top: 1em;
+
+        button,
+        .download {
+            @include border-radius(0.5em);
+            @include box-sizing(border-box);
+            background: $palid-coffee;
+            color: $coffee;
+            font-weight: bold;
+            margin-top: 1em;
+            padding: 0.5em;
+        }
+        button {
+            @include span-columns(1.5 omega, 3);
+            border: none;
+        }
+        input {
+            @include border-radius(0.5em);
+            @include box-sizing(border-box);
+            border: 0;
+            padding: 0.5em;
+            width: 100%;
+
+            + label {
+                margin-top: 0.5em;
+            }
+        }
+        label {
+            display: block;
+            margin-bottom: 0.3em;
+        }
+        .download {
+            @include span-columns(3, 3);
+            display: none;
+            text-align: center;
+        }
+    }
+}

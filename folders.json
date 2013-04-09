@@ -1,0 +1,27 @@
+{
+    "coffee": {
+        "public": {
+            "dist": "assets/dist/js/",
+            "src": "src/coffee/public/",
+            "tmp": "assets/tmp/js/",
+            "watch": "src/coffee/public/**/*.coffee"
+        },
+        "test": {
+            "dest": "test/",
+            "src": "src/coffee/test/",
+            "watch": "src/coffee/test/**/*.coffee"
+        },
+        "watch": "src/coffee/**/*.coffee"
+    },
+    "compass": {
+        "configpath": "src/scss/config.rb",
+        "dist": "assets/dist/css",
+        "src": "src/scss/",
+        "tmp": "assets/tmp/css/",
+        "watch": "src/scss/**/*.scss"
+    },
+    "test": {
+        "specs": "test/class/**/*.coffee",
+        "src": "public/js/dev/class/**/*.js"
+    }
+}

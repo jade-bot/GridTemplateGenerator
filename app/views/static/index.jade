@@ -1,0 +1,27 @@
+aside.options
+    h2 Enter options
+    form#js-grid-options
+        label(for='js-grid-font-size') Font Size
+        input#js-grid-font-size(type='number', step='any', placeholder='(In pixels)', required)
+        label(for='js-grid-columns') Total Columns
+        input#js-grid-columns(type='number', step='any', placeholder='(Integer number)', required)
+        label(for='js-grid-column-width') Column width
+        input#js-grid-column-width(type='number', step='any', placeholder='(In ems)', required)
+        label(for='js-grid-gutter-width') Space between columns
+        input#js-grid-gutter-width(type='number', step='any', placeholder='(In ems)', required)
+        label(for='js-grid-padding-width') Lateral padding
+        input#js-grid-padding(type='number', step='any', placeholder='(In ems)', required)
+        button#js-grid-create Create grid
+        a#js-grid-download-image.download Download as an image
+section.body
+    div.canvas-container
+        canvas#js-grid-target
+
+script
+    var require = {
+        baseUrl: '/js/',
+        deps: [ 'main' ],
+        urlArgs: 'nocache=' + (new Date().getTime())
+    }
+
+script(src='/lib/requirejs/require.js')
