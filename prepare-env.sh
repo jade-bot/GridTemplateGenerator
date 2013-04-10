@@ -96,7 +96,7 @@ then
     actual_step=`expr $actual_step + 1`
 
     echo "\n$actual_step- Installing Node packages\n---------------------------"
-    npm install
+    sudo npm install
     echo "Done."
 fi
 
